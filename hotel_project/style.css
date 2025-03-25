@@ -1,0 +1,207 @@
+/* HTML ve body etiketlerine margin ve padding sıfırlama */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Sayfa yüksekliğini %100 yapıyoruz */
+}
+.img {
+    background-image: url("istockphoto-689431424-612x612.jpg");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar için stil */
+.navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between; /* Öğeleri sol ve sağa yerleştirir */
+    align-items: center; /* Elemanları dikeyde ortalar */
+    padding: 10px 20px; /* Navbar'a padding ekler */
+}
+
+/* Navbar item'ları için stil */
+.navbar a {
+    text-decoration: none; /* Bağlantılar için alt çizgiyi kaldır */
+    color: inherit; /* Rengi koru */
+}
+
+.navbar span {
+    margin: 0 15px; /* Navbar elemanları arasına boşluk ekler */
+    cursor: pointer; /* Elemanların tıklanabilir olmasını sağlar */
+    font-size: 18px;
+}
+
+/* Arka plan için stil */
+.back {
+    background-image: url("DALL·E 2025-03-22 03.42.41 - A luxurious 4K image of a grand hotel, showcasing a modern and elegant architectural design with large glass windows, a well-lit lobby with plush furn.webp");
+    width: 100%; /* Tam genişlik */
+    background-position: center;
+    background-size: cover; /* Resmin boyutunu kapsayıcı hale getirir */
+    min-height: 100vh; /* Esnek yükseklik, tam ekran genişliği için */
+    /* Resmin tekrar etmesini engeller */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+    height: auto; 
+    position: relative; /* İçerik pozisyonlandırması için */
+}
+
+/* Karşılama yazısı için stil */
+.karsılama {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 10%; /* Yüksekliği üstten ayarlıyoruz */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+    text-align: center;
+    width: 90%; /* Yazıyı geniş tutmak için */
+}
+
+/* Başlık stil */
+.back h1 {
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    top: 20%; /* Başlık için üstten daha fazla boşluk */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+    text-align: center;
+}
+
+/* "Go it" butonunun stili */
+.button {
+    background-color: #4c54af; /* Yeşil arka plan */
+    color: white; /* Beyaz metin */
+    padding: 10px 20px; /* Düğme içindeki boşluk */
+    text-align: center; /* Yazıyı ortalar */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    border-radius: 5px; /* Köşeleri yuvarlar */
+    font-size: 18px;
+    margin-top: 20px;
+    position: absolute;
+    top: 40%; /* Konumu üstten ayarlıyoruz */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+}
+
+.button:hover {
+    background-color: #45a049; /* Hover etkisi */
+}
+
+.info {
+    width: 100%;
+    height: 400px; /* Fotoğrafların bulunduğu alanın yüksekliğini sınırlıyoruz */
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center; /* Fotoğrafları yatayda ortalar */
+    align-items: start; /* Fotoğrafları dikeyde ortalar */
+    padding: 20px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Fotoğraflar arasında boşluk bırakmak için */
+    max-width: 1200px; /* Fotoğrafların genişliğini sınırlıyoruz */
+}
+
+.foto-container {
+    text-align: center;
+    flex: 1; /* Fotoğrafların eşit şekilde dağılmasını sağlar */
+    padding: 0 10px; /* Her bir fotoğrafın etrafına biraz boşluk ekler */
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Fotoğraf boyutunu sınırlıyoruz */
+    margin-bottom: 10px;
+}
+
+.photos span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+}
+.service {
+    width: 100%;
+    height: 500px; /* Yükseklik belirleyelim */
+    background-color: black;
+    display: flex;
+}
+
+.img-1 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info2 {
+    background-color: rgb(6, 98, 156);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.room{
+    display: flex;
+   
+    justify-content: space-between; /* Fotoğraflar arasındaki boşluğu eşitler */
+    width: 100%; /* Genişliği tam genişlik yapar */
+    height: 200px; /* Yüksekliği ayarlayın */
+}
+
+.room-photo{
+    width: auto;
+    
+    height: 200px;
+    object-fit: cover; 
+}
+
+.room:last-child{
+    
+    margin-right: auto;
+}
+.room-container p{
+    
+    justify-content: center;
+    text-align: center;
+}
+.signup {
+    display: flex;
+    margin-top: 40px;
+    width: auto;
+    height: 400px;
+    background-color: grey;
+}
+
+.sphoto, .sform {
+    width: 50%;
+    height: auto;
+}
+
+.signup h2 {
+    text-align: center;
+}
+
+.sform label {
+    display: block;
+    width: 100%; /* Label'lar genişliği kapsayıcıya göre ayarlanmalı */
+    margin-bottom: 5px; /* Etiketler arasında biraz boşluk */
+}
+
+.sform input {
+    width: 90%; /* Genişliği %100 yaparak bloğa tam oturmasını sağlarız */
+    padding: 10px; /* Input içindeki yazı ile kenar arasında boşluk ekler */
+    margin-top: 10px; /* Üstten boşluk */
+    display: block;
+}
+
